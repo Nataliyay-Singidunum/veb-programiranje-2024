@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.mirza-regular {
+    font-family: "Mirza", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mirza-medium {
+    font-family: "Mirza", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mirza-semibold {
+    font-family: "Mirza", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.mirza-bold {
+    font-family: "Mirza", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.milonga-regular {
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    display: flex;
+    background-color: #283618;
+    font-size: 64pt;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    padding: 0 200px;
+    z-index: 1000;
+
+}
+
+header #head_left{
+    width: calc(50% - 200px);
+}
+
+header #head_right{
+    width: calc(50% - 200px);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header #head_left a{
+    text-decoration: none;
+    color: #FEFAE0;
+}
+
+header #head_right img{
+    padding: 0 0 0 20px ;
+}
+
+header #head_right img:hover{
+    opacity: 0.5;
+}
+
+nav {
+    z-index: 999;
+    background-color: #606C38;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 24pt;
+    display: flex;
+    height: 80px;
+    padding: 0 200px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    display: flex;
+    color: #FEFAE0;
+    padding-right: 30px;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav ul a{
+    display: flex;
+    width: 100px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav a:hover{
+    color: #283618;
+    background-color: #FEFAE0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FEFAE0;
+}
+
+main{
+    margin-top: 180px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/main/home_banner.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+#banner img{
+    width: 100%;
+    margin-top: 180px;
+}
+
+#overlay{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(#28361800, #283618);
+}
+
+#banner h2{
+    color: #FEFAE0;
+    font-size: 64pt;
+    padding-left: 200px;
+    position: relative;
+    top: 300px;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    padding: 200px 400px;
+    background-color: #FEFAE0;
+    flex-direction: column;
+}
+
+#about h3{
+    font-size: 24pt;
+    color: #BC6C25;
+    padding-bottom: 20px;
+}
+
+#about p{
+    font-size: 24pt;
+    color: #DDA15E;
+}
+
+#products{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    background-color: #FEFAE0;
+}
+
+.product{
+    background-color: red;
+    height: 450px;
+    width: 359px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.product h3{
+    color: #FEFAE0;
+    font-size: 24pt;
+    padding: 20px;
+}
+
+#product_1{
+    background-image: url('../assets/main/images/product1.jpg');
+
+}
+
+#product_2{
+    background-image: url('../assets/main/images/product2.jpg');
+
+}
+
+#product_3{
+    background-image: url('../assets/main/images/product3.jpg');
+}
+
+#product_4{
+    background-image: url('../assets/main/images/product4.jpg');
+}
+
+#sign_up{
+    padding: 100px 200px;
+    background-color: #FEFAE0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign_up_aside_left{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+#sign_up_aside_left h2{
+    font-size: 64pt;
+    color: #BC6C25;
+    padding-bottom: 40px;
+}
+
+#sign_up_aside_left a{
+    font-size: 32pt;
+    color: #FEFAE0;
+    background-color: #606C38;
+    width: fit-content;
+    padding: 20px 80px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#sign_up_aside_left a:hover{
+    background-color: #283618;
+}
+
+#sign_up_aside_left p{
+    font-size: 24pt;
+    color: #DDA15E;
+}
+
+#sign_up aside img{ 
+    height: 600px;
+}
+
+#content{
+    display: flex;
+    padding: 200px 400px;
+    background-color: #FEFAE0;
+}
+
+#content aside img{
+    width: 700px;
+}
+
+#content aside{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#content #sign_up{
+    display: flex;
+    align-items: center;
+    background-color: #283618;
+    color: #FEFAE0;
+}
+
+#content #sign_up h2{
+    color: #FEFAE0;
+    font-size: 48pt;
+}
+
+#content #sign_up form{
+    padding: 10px;
+    color: #606C38;
+    font-size: 24pt;
+    margin-top: 40px;
+}
+
+#content #sign_up input{
+    background-color: #FEFAE0;
+    width: 100%;
+    color: #283618;
+    font-size: 20pt;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+#content #sign_up button{
+    text-decoration: none;
+    padding: 10px 80px;
+    color: #FEFAE0;
+    background-color: #606C38;
+    font-size: 24pt;
+    border-radius: 20px;
+}
+
+#content #sign_up button:hover{
+    opacity: 0.5;
+}
+
+#content #sign_up a{
+    text-decoration: none;
+    padding: 10px;
+    color: #606C38;
+    font-size: 20pt;
+}
+
+#content #sign_up a:hover{
+    opacity: 0.5;
+}
+
+#content #user_account{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #283618;
+    color: #FEFAE0;
+    height: 600px;
+    width: 100%;
+    font-size: 24pt;
+}
+
+#content #user_account h2{
+    color: #BC6C25;
+    font-size: 32pt;
+}
+
+#content #user_account a{
+    text-decoration: none;
+    padding: 10px 80px;
+    color: #FEFAE0;
+    background-color: #606C38;
+    font-size: 24pt;
+    border-radius: 20px;
+
+}
+
+#content #user_account a:hover{
+opacity: 0.5;
+}
+
+#content #cart{
+    background-color: #283618;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #283618;
+    padding:200px;
+    color: #FEFAE0;
+    font-size: 24pt;
+}
+
+.footer_index{
+    text-align: center;
+}
+
+.footer_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_icons img{
+    padding: 20px;
+    margin: 5px;
+}
+
+.footer_icons img:hover{
+    opacity: 0.5;
+}
+
